@@ -1,0 +1,175 @@
+---
+format: 
+  revealjs:
+    code-block-bg: true
+    code-block-background: true
+    code-copy: true
+    chalkboard: true
+    highlight-style: github
+    slide-number: c/t
+    logo: https://github.com/fdzul/spatial_analysis_dengue_R_2024_talks/blob/main/talks/pkg_installation/logo_cenaprece.jpeg?raw=true
+    footer: "[github.com/fdzul](https://github.com/fdzul)"
+    center-title-slide: true
+---
+
+<h2>dengueverse: un Ecosistema en R para
+<br>el análisis del Dengue en México
+</h2>
+
+<h2>
+
+</h2>
+
+<hr>
+
+<br>
+
+
+<h4>Dr. Felipe Dzul Manzanilla</h3>
+
+<h4>Dr. Fabián Correa-Morales</h3>
+
+<h4>Dr. Héctor Gómez Dantés</h3>
+
+<h4>Dr. Herón Huerta</h3>
+
+<h4>Dr. Grea Moreno-Banda</h3>
+
+
+<br>
+<h5> Fecha: 2024-08-15 </h4>
+
+
+<br>
+
+<h4>
+
+
+![](logo_dengueverse2.png){.absolute top="250" left="580" width="550"}
+
+## [Temario]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+- dengueverse
+- rgeomex
+- densnv
+- denhotspots
+- deneggs
+- popmex
+
+
+## [dengueverse]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+::: {.column style="width: 50%; font-size: 80%"}
+![](logo_dengueverse3.png)
+:::
+
+::: {.column style="width: 50%; font-size: 100%"}
+**dengueverse** 
+
+es un universo o colección de paquetes en R para el análisis y la toma de desiciones en el programa de prevención y control del dengue en México.
+:::
+
+::::
+
+
+## [rgeomex]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+::: {.column style="width: 40%; font-size: 80%"}
+<a href = "https://fdzul.github.io/rgeomex/">
+![](https://github.com/fdzul/rgeomex/blob/main/man/figures/logo.png?raw=true)
+:::
+
+::: {.column style="width: 60%; font-size: 100%"}
+Es un paquete que proporciona bases de datos geográficos a diferentes niveles de resolución (Estatal (AGEE), Municipal (AGEM), Sectores, AGEBs, & Manzanas) del INE e INEGI. El paquete incluye funciones para extraer AGEBs, Manzanas, Sectores y Localidades.
+
+:::
+
+::::
+
+## [popmex]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+::: {.column style="width: 40%; font-size: 80%"}
+<a href = "https://fdzul.github.io/popmex/">
+![](https://github.com/fdzul/popmex/blob/main/man/figures/logo.png?raw=true)
+:::
+
+::: {.column style="width: 60%; font-size: 100%"}
+Es un paquete que proporciona bases de datos espaciales de la densidad poblacional a diferentes niveles de resolución.
+
+- hdx_pop2023 (400m de resolución)
+- hdx_pop2022
+- hdx_pop2021
+- hdx_pop2020
+:::
+
+::::
+
+
+## [denhotspots]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+::: {.column style="width: 40%; font-size: 80%"}
+<a href = "https://fdzul.github.io/denhotspots/">
+![](https://github.com/fdzul/denhotspots/blob/master/man/figures/logo.png?raw=true)
+:::
+
+::: {.column style="width: 60%; font-size: 100%"}
+El función central del paquete es realizar el análisis espacial del dengue con el estadístico espacial local $G{i}^*$
+:::
+
+::::
+
+
+## [densnv & boldenr]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+::: {.column style="width: 40%; font-size: 80%"}
+<a href = "https://fdzul.github.io/densnv/">
+![](https://github.com/fdzul/densnv/blob/main/docs/reference/figures/logo.png?raw=true)
+:::
+
+::: {.column style="width: 60%; font-size: 100%"}
+El objetivo del paquete es realizar el análisis de las bases de datos de las Enfermedades Transmitidas por Vector, a través de graficos, tablas y mapas con el objetivo de incidir de manera directa en la toma de desiciones racionales y oportunas en los programas de ETVS
+:::
+
+::::
+
+
+## [deneggs]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+::: {.column style="width: 40%; font-size: 80%"}
+<a href = "https://fdzul.github.io/deneggs/">
+![](https://github.com/fdzul/deneggs/blob/master/man/figures/logo.png?raw=true)
+:::
+
+::: {.column style="width: 60%; font-size: 100%"}
+Es un paquete diseñado para generar mapas predictivos del número de huevos en áreas donde no se realiza la colecta. Los mapas predictivos se generan mediante el análisis geoestadístico en el marco del INLA.
+:::
+
+::::
+
+
+## [Dios Botic]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+-   ***Bio*** : [https://fdzul.github.io/web_site_fadm/]()
+
+-   ***email*** : [felipe.dzul.m@gmail.com]()
+
+-   ***celular*** : [9999580167]()
+
+-   ***slides***: [https://calm-hummingbird-41cb33.netlify.app/talks/dengueverse/#/](https://calm-hummingbird-41cb33.netlify.app/talks/dengueverse/#/)
