@@ -1059,7 +1059,7 @@ oaxaca$spde[[30]]$map
 ```{r egg_hotspots_acapulco_2024_week1}
 #| echo: false
 #| output: true
-
+load("/Users/fdzul/Dropbox/projects/ETV/dengue/eggs_hotspots_talks/8.RData/hotspots_eggs/12_guerrero/acapulco_eggs_hotspots.RData")
 acapulco$spde[[22]]$map
 ```
 :::
@@ -1183,7 +1183,8 @@ deneggs::map_eggs_hotspots(betas = merida$betas,
                            locality = "Mérida",
                            cve_edo = "31",
                            palette = rcartocolor::carto_pal,
-                           name = "SunsetDark")
+                           name = "SunsetDark",
+                           static_map = TRUE)
 ```
 
 :::
@@ -1197,7 +1198,8 @@ deneggs::map_eggs_hotspots(betas = oaxaca$betas,
                            locality = "Oaxaca de Juarez",
                            cve_edo = "20",
                            palette = rcartocolor::carto_pal,
-                           name = "SunsetDark")
+                           name = "SunsetDark",
+                           static_map = TRUE)
 ```
 :::
 
@@ -1219,7 +1221,8 @@ deneggs::map_eggs_hotspots(betas = guadalajara$betas,
                                         "Guadalajara", "Tonalá"),
                            cve_edo = "14",
                            palette = rcartocolor::carto_pal,
-                           name = "SunsetDark")
+                           name = "SunsetDark",
+                           static_map = TRUE)
 
 ```
 :::
@@ -1232,7 +1235,8 @@ deneggs::map_eggs_hotspots(betas = guadalajara$betas,
                            locality = "Acapulco de Juarez",
                            cve_edo = "12",
                            palette = rcartocolor::carto_pal,
-                           name = "SunsetDark")
+                           name = "SunsetDark",
+                           static_map = TRUE)
 ```
 :::
 
@@ -1240,6 +1244,26 @@ deneggs::map_eggs_hotspots(betas = guadalajara$betas,
 :::
 </body>
 </html>
+
+
+## [Desarrollo Conceptual del **Modelo Estratégico de Focalización del Dengue**]{.r-fit-text style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+
+::: {.column style="width: 50%"}
+Concepto
+
+![](https://github.com/fdzul/spatial_analysis_dengue_R_2024_talks/blob/main/talks/mia/transmision_persistente.jpg?raw=true){.absolute right="800" height="815"}
+:::
+
+:::{.column style="width: 50%"}
+Mapa de riesgo
+<img src = "https://github.com/fdzul/spatial_analysis_dengue_R_2024_talks/blob/main/talks/spatial_analysis_dengue/fig/map_risk_guadalajara.jpg?raw=true">
+:::
+
+::::
 
 
 ## [Transmisión Persistente & Abundancia Persistente en Guadalajara & Mérida]{.r-fit-text style="color:#003300;"}
