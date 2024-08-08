@@ -12,6 +12,8 @@ format:
     center-title-slide: true
 ---
 
+
+
 <h2>
 [deneggs]{style="color:#003300;"} & la Vigilancia Entomológica <br> aplicada a la Salud Pública.</h2>
 
@@ -80,6 +82,8 @@ Fecha: 2024-08-15
 
 ## [Análisis Espacial del Vector de Dengue]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 ```{r, echo=FALSE, out.width='100%', fig.align='center'}
 DiagrammeR::grViz("digraph {
                   # graph definitions
@@ -150,6 +154,8 @@ DiagrammeR::grViz("digraph {
 ```
 
 
+
+
 ## [Vigilancia Entomológica con Ovitrampas]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
@@ -166,6 +172,8 @@ DiagrammeR::grViz("digraph {
 - **Captura en Línea**
 :::
 ::: {.column style="width: 50%; font-size: 80%"}
+
+
 ```{r}
 path <- "/Users/fdzul/Dropbox/CENAPRECE/2024/31_yucatan/DescargaOvitrampasMesFco.txt"
 deneggs::blocks_surveillance(locality = "Ticul",
@@ -173,11 +181,15 @@ deneggs::blocks_surveillance(locality = "Ticul",
                              path_coords = path)
 ```
 
+
+
 :::
 ::::
 
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 
 ```{r}
 library(magrittr)
@@ -186,22 +198,30 @@ deneggs::ovitraps_occupancy_abundancy(path_ovitraps  = path,
                                       scale = "ovitraps")
 ```
 
+
+
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 :::: {.columns}
 ::: {.column style="width: 100%; font-size: 80%"}
+
+
 ```{r}
 path <- "/Users/fdzul/Dropbox/CENAPRECE/2024/31_yucatan"
 deneggs::ovitraps_occupancy_abundancy(path_ovitraps = path,
                                       scale = "blocks")
 ```
+
+
 :::
 ::::
 
 
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 
 ```{r ovitraps}
 #| echo: false
@@ -217,8 +237,12 @@ deneggs::eggs_risk(path_vect = path_vect,
 ```
 
 
+
+
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 
 ```{r riesgo_entomologicos}
 #| echo: false
@@ -232,8 +256,12 @@ deneggs::eggs_risk(path_vect = path_vect,
                    locality = "Ticul",
                    risk = TRUE)
 ```
+
+
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 
 ```{r manzanas_calientes}
 #| echo: false
@@ -249,11 +277,15 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
 ```
 
 
+
+
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 .grid-container {
@@ -271,6 +303,8 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
 }
 </style>
 ```
+
+
 </head>
 <body>
 <h1>
@@ -302,6 +336,8 @@ Ticul
 :::
 
 ::: grid-item
+
+
 ```{r}
 #| echo: false
 #| output: true
@@ -318,9 +354,13 @@ deneggs::eggs_risk(path_vect = path_vect,
                    risk = FALSE)
 
 ```
+
+
 :::
 
 ::: grid-item
+
+
 ```{r}
 #| echo: false
 #| output: true
@@ -337,9 +377,13 @@ deneggs::eggs_risk(path_vect = path_vect,
                    risk = TRUE)
 
 ```
+
+
 :::
 
 ::: grid-item
+
+
 ```{r}
 #| echo: false
 #| output: true
@@ -356,6 +400,8 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
                         week = 50,
                         brand = "slack")
 ```
+
+
 :::
 
 :::
@@ -404,6 +450,8 @@ $\color{#2ECC40}{el \space proceso \space se \space encuentra \space implementad
 :::: {.columns}
 
 ::: {.column style="width: 50%"}
+
+
 
 ```{r, echo=FALSE,dpi=300,  fig.align ="center",out.height="100%", out.width = "90%"}
 DiagrammeR::grViz("digraph {
@@ -462,9 +510,13 @@ DiagrammeR::grViz("digraph {
 
 ```
 
+
+
 :::
 
 ::: {.column style="width: 50%"}
+
+
 
 ```{r, echo=FALSE,dpi=300, fig.align ="center", out.height="100%", out.width = "90%"}
 DiagrammeR::grViz("digraph {
@@ -519,6 +571,8 @@ DiagrammeR::grViz("digraph {
   height = 600)
 
 ```
+
+
 :::
 
 ::::
@@ -573,6 +627,8 @@ La función [spde_pred_map](https://fdzul.github.io/deneggs/reference/spde_pred_
 ::: {.panel-tabset}
 
 ## Código
+
+
 ```{r}
 #| echo: true
 #| output: false
@@ -598,19 +654,29 @@ x <- deneggs::eggs_hotspots(path_lect = path_ovitraps,
                             alpha = .99)
 ```
 
+
+
 ## Elementos
+
+
 ```{r}
 #| echo: true
 #| output: true
 names(x)
 ```
 
+
+
 ## Mapa
+
+
 ```{r}
 #| echo: false
 #| output: true
 x$map
 ```
+
+
 
 :::
 
@@ -620,6 +686,8 @@ x$map
 ::: {.panel-tabset}
 
 ## Código
+
+
 ```{r}
 #| echo: true
 #| output: false
@@ -649,13 +717,21 @@ x <- deneggs::spde_pred_map(path_lect = path_ovitraps,
                             leg_title = "Huevos")
 ```
 
+
+
 ## Elementos
+
+
 ```{r}
 #| echo: true
 #| output: true
 names(x)
 ```
+
+
 ### Distribuciones
+
+
 ```{r}
 #| echo: true
 #| output: true
@@ -664,12 +740,18 @@ x$dics |>
     dplyr::arrange(dic)
 ```
 
+
+
 ## Mapa
+
+
 ```{r}
 #| echo: false
 #| output: true
 x$map
 ```
+
+
 
 :::
 
