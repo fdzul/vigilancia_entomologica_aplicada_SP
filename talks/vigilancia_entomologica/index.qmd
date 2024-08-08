@@ -149,3 +149,43 @@ DiagrammeR::grViz("digraph {
 
 ```
 
+
+## [Vigilancia Entomológica con Ovitrampas]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+:::: {.columns}
+::: {.column style="width: 50%; font-size: 80%"}
+- **Muestreo Sistemático**
+   - 1 manzana por cada 4 a 6 en zonas planas
+   - 1 manzana por cada 2 a 4 en zonas con pendientes
+- **Muestreo por Autoselección**
+   - una casa por cada lado de la manzana
+- **Colecta Semanal**
+
+- **Captura en Línea**
+:::
+::: {.column style="width: 50%; font-size: 80%"}
+```{r}
+path <- "/Users/fdzul/Dropbox/CENAPRECE/2024/31_yucatan/DescargaOvitrampasMesFco.txt"
+
+deneggs::blocks_surveillance(locality = "Ticul",
+                             cve_edo = "31",
+                             path_coords = path)
+```
+
+:::
+::::
+
+
+
+## [Dios Botic]{style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+-   ***Bio*** : [https://fdzul.github.io/web_site_fadm/]()
+
+-   ***email*** : [felipe.dzul.m@gmail.com]()
+
+-   ***celular*** : [9999580167]()
+
+-   ***slides***: [https://stalwart-kangaroo-fd5f85.netlify.app/talks/vigilancia_entomologica](https://stalwart-kangaroo-fd5f85.netlify.app/talks/vigilancia_entomologica)
