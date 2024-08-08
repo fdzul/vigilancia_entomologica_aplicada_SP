@@ -12,6 +12,8 @@ format:
     center-title-slide: true
 ---
 
+
+
 <h2>
 [deneggs]{style="color:#003300;"} & la Vigilancia Entomológica <br> aplicada a la Salud Pública.</h2>
 
@@ -84,6 +86,8 @@ Fecha: 2024-08-15
 
 ## [Análisis Espacial del Vector de Dengue]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 ```{r, echo=FALSE, out.width='100%', fig.align='center'}
 DiagrammeR::grViz("digraph {
                   # graph definitions
@@ -154,6 +158,8 @@ DiagrammeR::grViz("digraph {
 ```
 
 
+
+
 ## [Vigilancia Entomológica con Ovitrampas]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
@@ -175,6 +181,8 @@ DiagrammeR::grViz("digraph {
 - **Captura en Línea**
 :::
 ::: {.column style="width: 50%; font-size: 80%"}
+
+
 ```{r}
 path <- "/Users/fdzul/Dropbox/CENAPRECE/2024/31_yucatan/DescargaOvitrampasMesFco.txt"
 deneggs::blocks_surveillance(locality = "Ticul",
@@ -182,11 +190,15 @@ deneggs::blocks_surveillance(locality = "Ticul",
                              path_coords = path)
 ```
 
+
+
 :::
 ::::
 
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 
 ```{r}
 library(magrittr)
@@ -195,22 +207,30 @@ deneggs::ovitraps_occupancy_abundancy(path_ovitraps  = path,
                                       scale = "ovitraps")
 ```
 
+
+
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 :::: {.columns}
 ::: {.column style="width: 100%; font-size: 80%"}
+
+
 ```{r}
 path <- "/Users/fdzul/Dropbox/CENAPRECE/2024/31_yucatan"
 deneggs::ovitraps_occupancy_abundancy(path_ovitraps = path,
                                       scale = "blocks")
 ```
+
+
 :::
 ::::
 
 
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 
 ```{r ovitraps}
 #| echo: false
@@ -226,8 +246,12 @@ deneggs::eggs_risk(path_vect = path_vect,
 ```
 
 
+
+
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 
 ```{r riesgo_entomologicos}
 #| echo: false
@@ -241,8 +265,12 @@ deneggs::eggs_risk(path_vect = path_vect,
                    locality = "Ticul",
                    risk = TRUE)
 ```
+
+
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 
 ```{r manzanas_calientes}
 #| echo: false
@@ -258,11 +286,15 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
 ```
 
 
+
+
 ## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 .grid-container {
@@ -280,6 +312,8 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
 }
 </style>
 ```
+
+
 </head>
 <body>
 <h1>
@@ -311,6 +345,8 @@ Ticul
 :::
 
 ::: grid-item
+
+
 ```{r}
 #| echo: false
 #| output: true
@@ -327,9 +363,13 @@ deneggs::eggs_risk(path_vect = path_vect,
                    risk = FALSE)
 
 ```
+
+
 :::
 
 ::: grid-item
+
+
 ```{r}
 #| echo: false
 #| output: true
@@ -346,9 +386,13 @@ deneggs::eggs_risk(path_vect = path_vect,
                    risk = TRUE)
 
 ```
+
+
 :::
 
 ::: grid-item
+
+
 ```{r}
 #| echo: false
 #| output: true
@@ -365,6 +409,8 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
                         week = 50,
                         brand = "slack")
 ```
+
+
 :::
 
 :::
@@ -413,6 +459,8 @@ $\color{#2ECC40}{el \space proceso \space se \space encuentra \space implementad
 :::: {.columns}
 
 ::: {.column style="width: 50%"}
+
+
 
 ```{r, echo=FALSE,dpi=300,  fig.align ="center",out.height="100%", out.width = "90%"}
 DiagrammeR::grViz("digraph {
@@ -471,9 +519,13 @@ DiagrammeR::grViz("digraph {
 
 ```
 
+
+
 :::
 
 ::: {.column style="width: 50%"}
+
+
 
 ```{r, echo=FALSE,dpi=300, fig.align ="center", out.height="100%", out.width = "90%"}
 DiagrammeR::grViz("digraph {
@@ -528,6 +580,8 @@ DiagrammeR::grViz("digraph {
   height = 600)
 
 ```
+
+
 :::
 
 ::::
@@ -582,6 +636,8 @@ La función [spde_pred_map](https://fdzul.github.io/deneggs/reference/spde_pred_
 ::: {.panel-tabset}
 
 ## Código
+
+
 ```{r}
 #| echo: true
 #| output: false
@@ -604,19 +660,29 @@ x <- deneggs::eggs_hotspots(path_lect = path_ovitraps,
                             alpha = .99)
 ```
 
+
+
 ## Elementos
+
+
 ```{r}
 #| echo: true
 #| output: true
 names(x)
 ```
 
+
+
 ## Mapa
+
+
 ```{r}
 #| echo: false
 #| output: true
 x$map
 ```
+
+
 
 :::
 
@@ -626,6 +692,8 @@ x$map
 ::: {.panel-tabset}
 
 ## Código
+
+
 ```{r}
 #| echo: true
 #| output: false
@@ -651,14 +719,22 @@ x <- deneggs::spde_pred_map(path_lect = path_ovitraps,
                             palette_vir  = "magma", leg_title = "Huevos")
 ```
 
+
+
 ## Elementos
+
+
 ```{r}
 #| echo: true
 #| output: true
 names(x)
 ```
 
+
+
 ### Distribuciones
+
+
 ```{r}
 #| echo: true
 #| output: true
@@ -667,12 +743,18 @@ x$dics |>
     dplyr::arrange(dic)
 ```
 
+
+
 ## Mapa
+
+
 ```{r}
 #| echo: false
 #| output: true
 x$map
 ```
+
+
 
 :::
 
@@ -683,6 +765,8 @@ x$map
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 .grid-container-eggsweek {
@@ -700,6 +784,8 @@ x$map
 }
 </style>
 ```
+
+
 </head>
 <body>
 <h1>
@@ -711,76 +797,112 @@ x$map
 
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_merida_2024_week1}
 #| echo: false
 #| output: true
 load("~/Dropbox/projects/ETV/dengue/eggs_hotspots_talks/8.RData/hotspots_eggs/31_yucatan/merida_eggs_hotspots.RData")
 merida$spde[[23]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_merida_2024_week2}
 #| echo: false
 #| output: true
 merida$spde[[24]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_merida_2024_week3}
 #| echo: false
 #| output: true
 merida$spde[[25]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_merida_2024_week4}
 #| echo: false
 #| output: true
 merida$spde[[26]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_merida_2024_week5}
 #| echo: false
 #| output: true
 merida$spde[[27]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_merida_2024_week6}
 #| echo: false
 #| output: true
 merida$spde[[28]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_merida_2024_week7}
 #| echo: false
 #| output: true
 merida$spde[[29]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_merida_2024_week8}
 #| echo: false
 #| output: true
 merida$spde[[30]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_merida_2024_week9}
 #| echo: false
 #| output: true
 merida$spde[[31]]$map
 ```
+
+
 :::
 
 
@@ -797,6 +919,8 @@ merida$spde[[31]]$map
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 .grid-container-eggsweek {
@@ -814,6 +938,8 @@ merida$spde[[31]]$map
 }
 </style>
 ```
+
+
 </head>
 <body>
 <h1>
@@ -825,76 +951,112 @@ merida$spde[[31]]$map
 
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_guadalajara_2024_week1}
 #| echo: false
 #| output: true
 load("~/Dropbox/projects/ETV/dengue/eggs_hotspots_talks/8.RData/hotspots_eggs/14_jalisco/guadalajara_eggs_hotspots.RData")
 guadalajara$spde[[23]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_guadalajara_2024_week2}
 #| echo: false
 #| output: true
 guadalajara$spde[[24]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_guadalajara_2024_week3}
 #| echo: false
 #| output: true
 guadalajara$spde[[25]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_guadalajara_2024_week4}
 #| echo: false
 #| output: true
 guadalajara$spde[[26]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_guadalajara_2024_week5}
 #| echo: false
 #| output: true
 guadalajara$spde[[27]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_guadalajara_2024_week6}
 #| echo: false
 #| output: true
 guadalajara$spde[[28]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_guadalajara_2024_week7}
 #| echo: false
 #| output: true
 guadalajara$spde[[29]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_guadalajara_2024_week8}
 #| echo: false
 #| output: true
 guadalajara$spde[[30]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_guadalajara_2024_week9}
 #| echo: false
 #| output: true
 guadalajara$spde[[31]]$map
 ```
+
+
 :::
 
 
@@ -912,6 +1074,8 @@ guadalajara$spde[[31]]$map
 
 <html>
 <head>
+
+
 ```{=html}
 <style>
 .grid-container-eggsweek {
@@ -929,6 +1093,8 @@ guadalajara$spde[[31]]$map
 }
 </style>
 ```
+
+
 </head>
 <body>
 <h1>
@@ -940,76 +1106,112 @@ guadalajara$spde[[31]]$map
 
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_oaxaca_2024_week1}
 #| echo: false
 #| output: true
 load("~/Dropbox/projects/ETV/dengue/eggs_hotspots_talks/8.RData/hotspots_eggs/20_oaxaca/hotspots_eggs_oaxaca.RData")
 oaxaca$spde[[22]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_oaxaca_2024_week2}
 #| echo: false
 #| output: true
 oaxaca$spde[[23]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_oaxaca_2024_week3}
 #| echo: false
 #| output: true
 oaxaca$spde[[24]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_oaxaca_2024_week4}
 #| echo: false
 #| output: true
 oaxaca$spde[[25]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_oaxaca_2024_week5}
 #| echo: false
 #| output: true
 oaxaca$spde[[26]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_oaxaca_2024_week6}
 #| echo: false
 #| output: true
 oaxaca$spde[[27]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_oaxaca_2024_week7}
 #| echo: false
 #| output: true
 oaxaca$spde[[28]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_oaxaca_2024_week8}
 #| echo: false
 #| output: true
 oaxaca$spde[[29]]$map
 ```
+
+
 :::
 
 ::: grid-item-eggsweek
+
+
 ```{r egg_hotspots_oaxaca_2024_week9}
 #| echo: false
 #| output: true
 oaxaca$spde[[30]]$map
 ```
+
+
 :::
 
 
