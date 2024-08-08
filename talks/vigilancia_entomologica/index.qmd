@@ -365,7 +365,7 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
 
 
 
-## [Conceptos de Análisis Geoestadísticos de Ae. aegypti con INLA]{style="color:#003300;" .r-fit-text}
+## [Conceptos del Análisis Geoestadísticos de Ae. aegypti con INLA]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -398,7 +398,7 @@ $\color{#2ECC40}{el \space proceso \space se \space encuentra \space implementad
 ::::
 
 
-## [2. Hotspots de Abundancia Persistente del Vector en Localidades Prioritarias]{style="color:#003300;" .r-fit-text}
+## [Algoritmo del Análisis Geoestadístico de Ae. aegypti con INLA]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 :::: {.columns}
@@ -458,7 +458,7 @@ DiagrammeR::grViz("digraph {
 
   
   }", 
-  height = 900)
+  height = 700)
 
 ```
 
@@ -516,7 +516,7 @@ DiagrammeR::grViz("digraph {
 
   
   }", 
-  height = 900)
+  height = 700)
 
 ```
 :::
