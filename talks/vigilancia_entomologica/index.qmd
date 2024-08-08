@@ -677,7 +677,7 @@ x$map
 :::
 
 
-## [Número de Huevos de *Aedes agypti* en Mérida 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+## [Número de Huevos de *Ae. aegypti* en Mérida 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -791,7 +791,7 @@ merida$spde[[31]]$map
 
 
 
-## [Número de Huevos de *Aedes agypti* en Guadalajara 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+## [Número de Huevos de *Ae. aegypti* en Guadalajara 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -906,7 +906,7 @@ guadalajara$spde[[31]]$map
 
 
 
-## [Número de Huevos de *Aedes agypti* en Oaxaca 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+## [Número de Huevos de *Ae. aegypti* en Oaxaca 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -1019,6 +1019,405 @@ oaxaca$spde[[30]]$map
 </html>
 
 
+
+
+
+## [Número de Huevos de *Ae. aegypti* en Acapulco 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+<html>
+<head>
+```{=html}
+<style>
+.grid-container-eggsweek {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item-eggsweek{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h1>
+</h1>
+<p>
+</p>
+
+::: grid-container-eggsweek
+
+
+::: grid-item-eggsweek
+```{r egg_hotspots_acapulco_2024_week1}
+#| echo: false
+#| output: true
+
+acapulco$spde[[22]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_acapulco_2024_week2}
+#| echo: false
+#| output: true
+acapulco$spde[[23]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_acapulco2024_week3}
+#| echo: false
+#| output: true
+acapulco$spde[[24]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_acapulco_2024_week4}
+#| echo: false
+#| output: true
+acapulco$spde[[25]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_acapulco_2024_week5}
+#| echo: false
+#| output: true
+acapulco$spde[[26]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_acapulco_2024_week6}
+#| echo: false
+#| output: true
+acapulco$spde[[27]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_acapulco_2024_week7}
+#| echo: false
+#| output: true
+acapulco$spde[[28]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_acapulco_2024_week8}
+#| echo: false
+#| output: true
+acapulco$spde[[29]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_acapulco_2024_week9}
+#| echo: false
+#| output: true
+acapulco$spde[[30]]$map
+```
+:::
+
+
+:::
+
+</body>
+</html>
+
+
+## [Intensidad de los Hotspots de la Abundancia de Huevos en el 2024 ]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+<html>
+<head>
+```{=html}
+<style>
+.grid-container-intensidad {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+}
+
+.grid-item-intensidad{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h1>
+</h1>
+<p>
+</p>
+
+::: grid-container-intensidad
+
+::: grid-item-intensidad
+Mérida
+:::
+
+::: grid-item-intensidad
+Oaxaca
+:::
+
+::: grid-item-intensidad
+```{r}
+#| echo: false
+#| output: true
+deneggs::map_eggs_hotspots(betas = merida$betas,
+                           locality = "Mérida",
+                           cve_edo = "31",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark")
+```
+
+:::
+
+
+::: grid-item-intensidad
+```{r}
+#| echo: false
+#| output: true
+deneggs::map_eggs_hotspots(betas = oaxaca$betas,
+                           locality = "Oaxaca de Juarez",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark")
+```
+:::
+
+::: grid-item-intensidad
+Guadalajara
+:::
+
+::: grid-item-intensidad
+Acapulco
+:::
+
+
+::: grid-item-intensidad
+```{r}
+#| echo: false
+#| output: true
+deneggs::map_eggs_hotspots(betas = guadalajara$betas,
+                           locality = c("Tlaquepaque", "Zapopan",
+                                        "Guadalajara", "Tonalá"),
+                           cve_edo = "14",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark")
+
+```
+:::
+
+::: grid-item-intensidad
+```{r}
+#| echo: false
+#| output: true
+ deneggs::map_eggs_hotspots(betas = acapulco$betas,
+                           locality = "Acapulco de Juarez",
+                           cve_edo = "12",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark")
+```
+:::
+
+
+:::
+</body>
+</html>
+
+
+## [Transmisión Persistente & Abundancia Persistente en Guadalajara & Mérida]{.r-fit-text style="color:#003300;"}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+<html>
+<head>
+```{=html}
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 5px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h1>
+</h1>
+<p>
+</p>
+
+::: grid-container
+
+::: grid-item
+Localidad
+:::
+
+::: grid-item
+Transmisión
+:::
+
+::: grid-item
+Vector
+:::
+
+::: grid-item
+Escenarios
+:::
+
+::: grid-item
+Mérida
+:::
+
+::: grid-item
+```{r hotspots_cases_merida, out.height="110%", out.width="110%", echo=FALSE}
+# Step 1. extract the locality ####
+loc <- rgeomex::extract_locality(cve_edo = "31", 
+                                 locality = "Merida")
+
+# Step 2. Extract the hotspots ####
+hotspots <- denmex::den_hotspots[loc, ]
+
+# Step 3. Vizualization of hotspots ####
+
+hotspots |>
+    denhotspots::staticmap_intensity(pal = rcartocolor::carto_pal,
+                                 pal_name = TRUE,
+                                 name = "OrYel",
+                                 breaks = 1,
+                                 dir_pal = -1,
+                                 x_leg = 0.5,
+                                 y_leg = 0.1,
+                                 ageb = TRUE)
+```
+:::
+
+::: grid-item
+```{r hotspots_vector_merida, out.height="110%", out.width="110%", echo=FALSE}
+source("/Users/fdzul/Dropbox/r_developments/r_talks/2023/reunion_interstatal_2023/reunion_quintana_roo/functions/intensity_eggs.R")
+
+denmex::eggs_betas_31_yucatan |>
+    dplyr::filter(year == 2019) |>
+    intensity_eggs(locality = "Mérida",
+                    cve_ent = "31",
+                    palette = rcartocolor::carto_pal,
+                    name = "SunsetDark")
+
+
+
+```
+:::
+
+::: grid-item
+```{r risk_merida, out.height="110%", out.width="110%", echo=FALSE}
+# Step 1. calculate the risk ####
+risk <- denhotspots::risk_ageb(betas = denmex::eggs_betas_31_yucatan,
+                               hotspots = denmex::den_hotspots,
+                               intensity_perc = 25,
+                               locality = "Mérida",
+                               cve_edo = "31")
+
+# Step 2. map ####
+denhotspots::map_risk(risk = risk,
+                      staticmap = TRUE)
+```
+:::
+
+::: grid-item
+Guadalajara
+:::
+
+::: grid-item
+```{r hotspots_cases_guadalajara, out.height="110%", out.width="110%", echo=FALSE}
+# Step 1. extract the locality ####
+loc <- rgeomex::extract_locality(cve_edo = "14", 
+                                 locality = c("Guadalajara",
+                                              "Tlaquepaque",
+                                              "Tonalá",
+                                              "Zapopan"))
+
+# Step 2. Extract the hotspots ####
+hotspots <- denmex::den_hotspots[loc, ]
+
+# Step 3. Vizualization of hotspots ####
+
+hotspots |>
+    denhotspots::staticmap_intensity(pal = rcartocolor::carto_pal,
+                                 pal_name = TRUE,
+                                 name = "OrYel",
+                                 breaks = 1,
+                                 dir_pal = -1,
+                                 x_leg = 0.5,
+                                 y_leg = 0.1,
+                                 ageb = TRUE)
+```
+:::
+
+::: grid-item
+```{r hotspots_vector_guadalajara, out.height="110%", out.width="110%", echo=FALSE}
+source("/Users/fdzul/Dropbox/r_developments/r_talks/2023/reunion_interstatal_2023/reunion_quintana_roo/functions/intensity_eggs.R")
+
+denmex::eggs_betas_14_jalisco |>
+    dplyr::filter(year == 2019) |>
+    intensity_eggs(locality = c("Guadalajara",
+                                "Tlaquepaque",
+                                "Tonalá",
+                                "Zapopan"),
+                    cve_ent = "14",
+                    palette = rcartocolor::carto_pal,
+                    name = "SunsetDark")
+
+
+
+```
+:::
+
+::: grid-item
+```{r risk_guadalajara, out.height="110%", out.width="110%", echo=FALSE}
+# Step 1. calculate the risk ####
+risk <- denhotspots::risk_ageb(betas = denmex::eggs_betas_14_jalisco,
+                               hotspots = denmex::den_hotspots,
+                               intensity_perc = 25,
+                               locality = c("Guadalajara",
+                                              "Tlaquepaque",
+                                              "Tonalá",
+                                              "Zapopan"),
+                               cve_edo = "14")
+
+# Step 2. map ####
+denhotspots::map_risk(risk = risk,
+                      staticmap = TRUE)
+```
+:::
+
+:::
+
+</body>
+</html>
 
 
 ## [Dios Botic]{style="color:#003300;"}
