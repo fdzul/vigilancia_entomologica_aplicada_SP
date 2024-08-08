@@ -168,7 +168,6 @@ DiagrammeR::grViz("digraph {
 ::: {.column style="width: 50%; font-size: 80%"}
 ```{r}
 path <- "/Users/fdzul/Dropbox/CENAPRECE/2024/31_yucatan/DescargaOvitrampasMesFco.txt"
-
 deneggs::blocks_surveillance(locality = "Ticul",
                              cve_edo = "31",
                              path_coords = path)
@@ -177,7 +176,28 @@ deneggs::blocks_surveillance(locality = "Ticul",
 :::
 ::::
 
+## [Ovitrampas & Decisiones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
+```{r}
+library(magrittr)
+path <- "/Users/fdzul/Dropbox/CENAPRECE/2024/31_yucatan"
+deneggs::ovitraps_occupancy_abundancy(path_ovitraps  = path,
+                                      scale = "ovitraps")
+```
+
+## [Ovitrampas & Desiciones Basadas en Evidencia]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+:::: {.columns}
+::: {.column style="width: 100%; font-size: 80%"}
+```{r}
+path <- "/Users/fdzul/Dropbox/CENAPRECE/2024/31_yucatan"
+deneggs::ovitraps_occupancy_abundancy(path_ovitraps = path,
+                                      scale = "blocks")
+```
+:::
+::::
 
 ## [Dios Botic]{style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
