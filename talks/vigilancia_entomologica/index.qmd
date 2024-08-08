@@ -65,7 +65,7 @@ Fecha: 2024-08-15
 
 <h4>
 
-![](deneggs.png){.absolute top="150" left="580" width="450"}
+![](deneggs.png){.absolute top="180" left="580" width="450"}
 
 ## [Temario]{style="color:#003300;"}
 
@@ -375,7 +375,7 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
 ![](https://github.com/fdzul/spatial_analysis_dengue_R_2024_talks/blob/main/talks/spatial_analysis_dengue/guadalajara_sample.jpg?raw=true)
 :::
 
-::: {.column style="width: 50%; font-size: 80%"}
+::: {.column style="width: 50%; font-size: 60%"}
 $s{_i}$ sitios de colecta con coordenadas geográficas (longitud. latitud).
 &nbsp;
 
@@ -523,9 +523,6 @@ DiagrammeR::grViz("digraph {
 
 ::::
 
-::: aside
-[Modificado de Zuur et al 2017](http://www.highstat.com/index.php/beginner-s-guide-to-regression-models-with-spatial-and-temporal-correlation); [Dzul-Manzanilla et al 2019](https://www.researchgate.net/publication/338595327_HOTSPOTS_DE_Aedes_aegypti_EN_EL_AREA_METROPOLITANA_DE_VERACRUZ_MEXICO)
-:::
 
 
 ## [Análisis Geoestadístico de Ovitrampas en R]{.r-fit-text style="color:#003300;"}
