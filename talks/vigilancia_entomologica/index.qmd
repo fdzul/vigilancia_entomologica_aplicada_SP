@@ -25,7 +25,7 @@ format:
 
 <h4>
 
-Dr. Felipe Dzul Manzanilla
+[Dr. Felipe Dzul Manzanilla]{style="color:#620002;"} 
 
 </h3>
 
@@ -152,6 +152,11 @@ DiagrammeR::grViz("digraph {
 }")
 
 ```
+
+
+## [Vigilancia Entomológica con Ovitrampas]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
 
 
 ## [Vigilancia Entomológica con Ovitrampas]{style="color:#003300;" .r-fit-text}
@@ -670,6 +675,461 @@ x$map
 ```
 
 :::
+
+
+## [Número de Huevos de *Aedes agypti* en Mérida 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+<html>
+<head>
+```{=html}
+<style>
+.grid-container-eggsweek {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item-eggsweek{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h1>
+</h1>
+<p>
+</p>
+
+::: grid-container-eggsweek
+
+
+::: grid-item-eggsweek
+```{r egg_hotspots_merida_2024_week1}
+#| echo: false
+#| output: true
+load("~/Dropbox/projects/ETV/dengue/eggs_hotspots_talks/8.RData/hotspots_eggs/31_yucatan/merida_eggs_hotspots.RData")
+merida$spde[[23]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_merida_2024_week2}
+#| echo: false
+#| output: true
+merida$spde[[24]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_merida_2024_week3}
+#| echo: false
+#| output: true
+merida$spde[[25]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_merida_2024_week4}
+#| echo: false
+#| output: true
+merida$spde[[26]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_merida_2024_week5}
+#| echo: false
+#| output: true
+merida$spde[[27]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_merida_2024_week6}
+#| echo: false
+#| output: true
+merida$spde[[28]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_merida_2024_week7}
+#| echo: false
+#| output: true
+merida$spde[[29]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_merida_2024_week8}
+#| echo: false
+#| output: true
+merida$spde[[30]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_merida_2024_week9}
+#| echo: false
+#| output: true
+merida$spde[[31]]$map
+```
+:::
+
+
+:::
+
+</body>
+</html>
+
+
+
+## [Número de Huevos de *Aedes agypti* en Guadalajara 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+<html>
+<head>
+```{=html}
+<style>
+.grid-container-eggsweek {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item-eggsweek{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h1>
+</h1>
+<p>
+</p>
+
+::: grid-container-eggsweek
+
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week1}
+#| echo: false
+#| output: true
+load("~/Dropbox/projects/ETV/dengue/eggs_hotspots_talks/8.RData/hotspots_eggs/14_jalisco/guadalajara_eggs_hotspots.RData")
+guadalajara$spde[[23]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week2}
+#| echo: false
+#| output: true
+guadalajara$spde[[24]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week3}
+#| echo: false
+#| output: true
+guadalajara$spde[[25]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week4}
+#| echo: false
+#| output: true
+guadalajara$spde[[26]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week5}
+#| echo: false
+#| output: true
+guadalajara$spde[[27]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week6}
+#| echo: false
+#| output: true
+guadalajara$spde[[28]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week7}
+#| echo: false
+#| output: true
+guadalajara$spde[[29]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week8}
+#| echo: false
+#| output: true
+guadalajara$spde[[30]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week9}
+#| echo: false
+#| output: true
+guadalajara$spde[[31]]$map
+```
+:::
+
+
+:::
+
+</body>
+</html>
+
+
+## [Número de Huevos de *Aedes agypti* en Guadalajara 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+<html>
+<head>
+```{=html}
+<style>
+.grid-container-eggsweek {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item-eggsweek{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h1>
+</h1>
+<p>
+</p>
+
+::: grid-container-eggsweek
+
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week1}
+#| echo: false
+#| output: true
+load("~/Dropbox/projects/ETV/dengue/eggs_hotspots_talks/8.RData/hotspots_eggs/14_jalisco/guadalajara_eggs_hotspots.RData")
+guadalajara$spde[[23]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week2}
+#| echo: false
+#| output: true
+guadalajara$spde[[24]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week3}
+#| echo: false
+#| output: true
+guadalajara$spde[[25]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week4}
+#| echo: false
+#| output: true
+guadalajara$spde[[26]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week5}
+#| echo: false
+#| output: true
+guadalajara$spde[[27]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week6}
+#| echo: false
+#| output: true
+guadalajara$spde[[28]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week7}
+#| echo: false
+#| output: true
+guadalajara$spde[[29]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week8}
+#| echo: false
+#| output: true
+guadalajara$spde[[30]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_guadalajara_2024_week9}
+#| echo: false
+#| output: true
+guadalajara$spde[[31]]$map
+```
+:::
+
+
+:::
+
+</body>
+</html>
+
+
+## [Número de Huevos de *Aedes agypti* en Oaxaca 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+<html>
+<head>
+```{=html}
+<style>
+.grid-container-eggsweek {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item-eggsweek{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+```
+</head>
+<body>
+<h1>
+</h1>
+<p>
+</p>
+
+::: grid-container-eggsweek
+
+
+::: grid-item-eggsweek
+```{r egg_hotspots_oaxaca_2024_week1}
+#| echo: false
+#| output: true
+load("~/Dropbox/projects/ETV/dengue/eggs_hotspots_talks/8.RData/hotspots_eggs/14_jalisco/guadalajara_eggs_hotspots.RData")
+oaxaca$spde[[23]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_oaxaca_2024_week2}
+#| echo: false
+#| output: true
+oaxaca$spde[[24]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_oaxaca_2024_week3}
+#| echo: false
+#| output: true
+oaxaca$spde[[25]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_oaxaca_2024_week4}
+#| echo: false
+#| output: true
+oaxaca$spde[[26]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_oaxaca_2024_week5}
+#| echo: false
+#| output: true
+oaxaca$spde[[27]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_oaxaca_2024_week6}
+#| echo: false
+#| output: true
+oaxaca$spde[[28]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_oaxaca_2024_week7}
+#| echo: false
+#| output: true
+oaxaca$spde[[29]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_oaxaca_2024_week8}
+#| echo: false
+#| output: true
+oaxaca$spde[[30]]$map
+```
+:::
+
+::: grid-item-eggsweek
+```{r egg_hotspots_oaxaca_2024_week9}
+#| echo: false
+#| output: true
+oaxaca$spde[[31]]$map
+```
+:::
+
+
+:::
+
+</body>
+</html>
+
+
 
 
 ## [Dios Botic]{style="color:#003300;"}
