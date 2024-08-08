@@ -458,7 +458,7 @@ DiagrammeR::grViz("digraph {
 
   
   }", 
-  height = 700)
+  height = 600)
 
 ```
 
@@ -516,7 +516,7 @@ DiagrammeR::grViz("digraph {
 
   
   }", 
-  height = 700)
+  height = 600)
 
 ```
 :::
