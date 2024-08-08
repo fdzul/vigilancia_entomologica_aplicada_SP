@@ -589,12 +589,9 @@ x <- deneggs::eggs_hotspots(path_lect = path_ovitraps,
                             integration = "eb",
                             fam = "zeroinflatednbinomial1",
                             k = 80, palette_vir  = "magma",
-                            leg_title = "Huevos",
-                            plot = FALSE,
-                            hist_dataset = FALSE,
-                            sem = 29,
-                            var = "eggs",
-                            cell_size = 3000,
+                            leg_title = "Huevos", plot = FALSE,
+                            hist_dataset = FALSE, sem = 29,
+                            var = "eggs", cell_size = 3000,
                             alpha = .99)
 ```
 
@@ -628,7 +625,6 @@ path_ovitraps <- "/Users/fdzul/Dropbox/CENAPRECE/2024/12_guerrero"
 path_coordinates <- paste(path_ovitraps, 
                           "DescargaOvitrampasMesFco.txt", 
                           sep = "/")
-
 # Step 2. run the function #### 
 library(magrittr)
 library(sf)
@@ -640,13 +636,10 @@ x <- deneggs::spde_pred_map(path_lect = path_ovitraps,
                             latitude =  "Pocision_Y",
                             aproximation = "gaussian",
                             integration = "eb",
-                            k = 30, plot = TRUE,
-                            week = 30,
+                            k = 30, plot = TRUE, week = 30,
                             var = "Huevecillos",
-                            cell_size = 2000,
-                            alpha = 0.99,
-                            palette_vir  = "magma",
-                            leg_title = "Huevos")
+                            cell_size = 2000, alpha = 0.99,
+                            palette_vir  = "magma", leg_title = "Huevos")
 ```
 
 ## Elementos
@@ -655,6 +648,7 @@ x <- deneggs::spde_pred_map(path_lect = path_ovitraps,
 #| output: true
 names(x)
 ```
+
 ### Distribuciones
 ```{r}
 #| echo: true
