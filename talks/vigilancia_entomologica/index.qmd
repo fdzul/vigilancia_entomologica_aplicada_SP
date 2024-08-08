@@ -65,7 +65,7 @@ Fecha: 2024-08-15
 
 <h4>
 
-![](deneggs.png){.absolute top="250" left="580" width="550"}
+![](deneggs.png){.absolute top="150" left="580" width="450"}
 
 ## [Temario]{style="color:#003300;"}
 
@@ -375,7 +375,7 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
 ![](https://github.com/fdzul/spatial_analysis_dengue_R_2024_talks/blob/main/talks/spatial_analysis_dengue/guadalajara_sample.jpg?raw=true)
 :::
 
-::: {.column style="width: 50%; font-size: 100%"}
+::: {.column style="width: 50%; font-size: 80%"}
 $s{_i}$ sitios de colecta con coordenadas geográficas (longitud. latitud).
 &nbsp;
 
