@@ -321,6 +321,11 @@
       margin-right: 0; 
     }
   </style>
+  <link href="index_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+  <script src="index_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <script src="index_files/libs/viz-1.8.2/viz.js"></script>
+  <link href="index_files/libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+  <script src="index_files/libs/grViz-binding-1.0.11/grViz.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -330,30 +335,30 @@
 <section class="slide level2">
 
 <h2>
-dengueverse: un Ecosistema en R para <br>el análisis del Dengue en México
+<span style="color:#003300;">deneggs</span> &amp; la Vigilancia Entomológica <br> aplicada a la Salud Pública.
 </h2>
 <h2>
 </h2>
 <hr>
 <p><br></p>
 <h4>
-Dr.&nbsp;Felipe Dzul Manzanilla
+<p>Dr.&nbsp;Felipe Dzul Manzanilla</p>
 </h4>
 <h4>
-Dr.&nbsp;Fabián Correa-Morales
+<p>Dr.&nbsp;Fabián Correa-Morales</p>
 </h4>
 <h4>
-Dr.&nbsp;Héctor Gómez Dantés
+<p>Dr.&nbsp;Héctor Gómez Dantés</p>
 </h4>
 <h4>
-Dr.&nbsp;Herón Huerta
+<p>Dr.&nbsp;Herón Huerta</p>
 </h4>
 <h4>
-Dr.&nbsp;Grea Moreno-Banda
+<p>Dr.&nbsp;Grea Moreno-Banda</p>
 </h4>
-<br>
+<p><br></p>
 <h5>
-Fecha: 2024-08-15
+<p>Fecha: 2024-08-15</p>
 </h5>
 <p><br></p>
 <h4>
@@ -371,87 +376,15 @@ Fecha: 2024-08-15
 <li>popmex</li>
 </ul>
 </section>
-<section id="dengueverse" class="slide level2">
-<h2><span style="color:#003300;">dengueverse</span></h2>
+<section id="análisis-espacial-del-vector-de-dengue" class="slide level2">
+<h2><span class="r-fit-text" style="color:#003300;">Análisis Espacial del Vector de Dengue</span></h2>
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-<div class="columns">
-<div class="column" style="width: 50%; font-size: 80%">
-<p><img data-src="logo_dengueverse3.png"></p>
-</div><div class="column" style="width: 50%; font-size: 100%">
-<p><strong>dengueverse</strong></p>
-<p>es un universo o colección de paquetes en R para el análisis y la toma de desiciones en el programa de prevención y control del dengue en México.</p>
-</div></div>
-</section>
-<section id="rgeomex" class="slide level2">
-<h2><span style="color:#003300;">rgeomex</span></h2>
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-<div class="columns">
-<div class="column" style="width: 40%; font-size: 80%">
-<p><a href="https://fdzul.github.io/rgeomex/"> <img data-src="https://github.com/fdzul/rgeomex/blob/main/man/figures/logo.png?raw=true"></a></p><a href="https://fdzul.github.io/rgeomex/">
-</a></div><div class="column" style="width: 60%; font-size: 100%"><a href="https://fdzul.github.io/rgeomex/">
-<p>Es un paquete que proporciona bases de datos geográficos a diferentes niveles de resolución (Estatal (AGEE), Municipal (AGEM), Sectores, AGEBs, &amp; Manzanas) del INE e INEGI. El paquete incluye funciones para extraer AGEBs, Manzanas, Sectores y Localidades.</p>
-</a></div><a href="https://fdzul.github.io/rgeomex/">
-</a></div><a href="https://fdzul.github.io/rgeomex/">
-</a></section><a href="https://fdzul.github.io/rgeomex/">
-</a><section id="popmex" class="slide level2"><a href="https://fdzul.github.io/rgeomex/">
-<h2><span style="color:#003300;">popmex</span></h2>
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-</a><div class="columns"><a href="https://fdzul.github.io/rgeomex/">
-</a><div class="column" style="width: 40%; font-size: 80%"><a href="https://fdzul.github.io/rgeomex/">
-</a><p><a href="https://fdzul.github.io/rgeomex/"></a><a href="https://fdzul.github.io/popmex/"> <img data-src="https://github.com/fdzul/popmex/blob/main/man/figures/logo.png?raw=true"></a></p><a href="https://fdzul.github.io/popmex/">
-</a></div><div class="column" style="width: 60%; font-size: 100%"><a href="https://fdzul.github.io/popmex/">
-<p>Es un paquete que proporciona bases de datos espaciales de la densidad poblacional a diferentes niveles de resolución.</p>
-<ul>
-<li>hdx_pop2023 (400m de resolución)</li>
-<li>hdx_pop2022</li>
-<li>hdx_pop2021</li>
-<li>hdx_pop2020</li>
-</ul>
-</a></div><a href="https://fdzul.github.io/popmex/">
-</a></div><a href="https://fdzul.github.io/popmex/">
-</a></section><a href="https://fdzul.github.io/popmex/">
-</a><section id="denhotspots" class="slide level2"><a href="https://fdzul.github.io/popmex/">
-<h2><span style="color:#003300;">denhotspots</span></h2>
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-</a><div class="columns"><a href="https://fdzul.github.io/popmex/">
-</a><div class="column" style="width: 40%; font-size: 80%"><a href="https://fdzul.github.io/popmex/">
-</a><p><a href="https://fdzul.github.io/popmex/"></a><a href="https://fdzul.github.io/denhotspots/"> <img data-src="https://github.com/fdzul/denhotspots/blob/master/man/figures/logo.png?raw=true"></a></p><a href="https://fdzul.github.io/denhotspots/">
-</a></div><div class="column" style="width: 60%; font-size: 100%"><a href="https://fdzul.github.io/denhotspots/">
-<p>El función central del paquete es realizar el análisis espacial del dengue con el estadístico espacial local <span class="math inline">\(G{i}^*\)</span></p>
-</a></div><a href="https://fdzul.github.io/denhotspots/">
-</a></div><a href="https://fdzul.github.io/denhotspots/">
-</a></section><a href="https://fdzul.github.io/denhotspots/">
-</a><section id="densnv-boldenr" class="slide level2"><a href="https://fdzul.github.io/denhotspots/">
-<h2><span style="color:#003300;">densnv &amp; boldenr</span></h2>
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-</a><div class="columns"><a href="https://fdzul.github.io/denhotspots/">
-</a><div class="column" style="width: 40%; font-size: 80%"><a href="https://fdzul.github.io/denhotspots/">
-</a><p><a href="https://fdzul.github.io/denhotspots/"></a><a href="https://fdzul.github.io/densnv/"> <img data-src="https://github.com/fdzul/densnv/blob/main/docs/reference/figures/logo.png?raw=true"></a></p><a href="https://fdzul.github.io/densnv/">
-</a></div><div class="column" style="width: 60%; font-size: 100%"><a href="https://fdzul.github.io/densnv/">
-<p>El objetivo del paquete es realizar el análisis de las bases de datos de las Enfermedades Transmitidas por Vector, a través de graficos, tablas y mapas con el objetivo de incidir de manera directa en la toma de desiciones racionales y oportunas en los programas de ETVS</p>
-</a></div><a href="https://fdzul.github.io/densnv/">
-</a></div><a href="https://fdzul.github.io/densnv/">
-</a></section><a href="https://fdzul.github.io/densnv/">
-</a><section id="deneggs" class="slide level2"><a href="https://fdzul.github.io/densnv/">
-<h2><span style="color:#003300;">deneggs</span></h2>
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-</a><div class="columns"><a href="https://fdzul.github.io/densnv/">
-</a><div class="column" style="width: 40%; font-size: 80%"><a href="https://fdzul.github.io/densnv/">
-</a><p><a href="https://fdzul.github.io/densnv/"></a><a href="https://fdzul.github.io/deneggs/"> <img data-src="https://github.com/fdzul/deneggs/blob/master/man/figures/logo.png?raw=true"></a></p><a href="https://fdzul.github.io/deneggs/">
-</a></div><div class="column" style="width: 60%; font-size: 100%"><a href="https://fdzul.github.io/deneggs/">
-<p>Es un paquete diseñado para generar mapas predictivos del número de huevos en áreas donde no se realiza la colecta. Los mapas predictivos se generan mediante el análisis geoestadístico en el marco del INLA.</p>
-</a></div><a href="https://fdzul.github.io/deneggs/">
-</a></div><a href="https://fdzul.github.io/deneggs/">
-</a></section><a href="https://fdzul.github.io/deneggs/">
-</a><section id="dios-botic" class="slide level2"><a href="https://fdzul.github.io/deneggs/">
-<h2><span style="color:#003300;">Dios Botic</span></h2>
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-</a><ul><a href="https://fdzul.github.io/deneggs/">
-</a><li><a href="https://fdzul.github.io/deneggs/"></a><p><a href="https://fdzul.github.io/deneggs/"><strong><em>Bio</em></strong> : </a><a href="">https://fdzul.github.io/web_site_fadm/</a></p></li>
-<li><p><strong><em>email</em></strong> : <a href="">felipe.dzul.m@gmail.com</a></p></li>
-<li><p><strong><em>celular</em></strong> : <a href="">9999580167</a></p></li>
-<li><p><strong><em>slides</em></strong>: <a href="https://stalwart-kangaroo-fd5f85.netlify.app/talks/dengueverse">https://stalwart-kangaroo-fd5f85.netlify.app/talks/dengueverse</a></p></li>
-</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-e8a46a92be3e294c9064" style="width:100%;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-e8a46a92be3e294c9064">{"x":{"diagram":"digraph {\n                  # graph definitions\n  graph [layout = dot, rankdir = TB]\n  \n  # node definitions\n  node [shape = rectangle, \n  style = filled, \n  color = grey, \n  nodesep = .5,\n  fixedsize = true, \n  width = 2.5] \n  \n  # edge definition\n  edge [color = grey, arrowhead = normal, arrowtail = dot]\n  \n  ##### entomological data\n  \n  ento [label = \"Vigilancia Entomológica\",  fillcolor =  \"#FF5A5F\", color = \"white\", fontcolor = \"white\"]\n  data_historic [label = \"Datos Históricos\",  fillcolor =  \"gray\", color = \"white\", fontcolor = \"white\"]\n  \n  years  [label = \"2014-2019\",  fillcolor =  \"gray\", color = \"white\", fontcolor = \"white\"]\n  data_datos_actuales [label = \"Datos del Año Actual\",  fillcolor =  \"gray\", color = \"white\", fontcolor = \"white\"]\n  data_acumulados [label = \"Datos hasta la Semana Actual\",  fillcolor =  \"gray\", color = \"white\", fontcolor = \"white\"]\n  data_trans_activa [label = \"Semana Actual\",  fillcolor =  \"gray\", color = \"white\", fontcolor = \"white\"]\n  \n  \n  ##### Spatial Data\n  \n  geo_data [label = \"Geoestatistical Data\",  fillcolor =  \"#0F9D58\", color = \"white\", fontcolor = \"white\"]\n \n  \n \n # Análisis \n spde [label = \"SPDE-INLA\",  fillcolor =  \"orange\", color = \"white\", fontcolor = \"black\"]\n hotspots [label = \"Hotspots Analysis\",  fillcolor =  \"orange\", color = \"white\", fontcolor = \"black\"]\n #prediction [label = \"Predicción Espacial de Huevos\",  fillcolor =  \"orange\", color = \"white\", fontcolor = \"black\"]\n \n # entomological study\n ovitraps [label = \"Ovitrampas\",  fillcolor =  \"orange\", color = \"white\", fontcolor = \"black\"]\n  enc_ver [label = \"Encuesta-Verificación\",  fillcolor =  \"orange\", color = \"white\", fontcolor = \"black\"]\n  adults [label = \"Colecta de Adultos\",  fillcolor =  \"orange\", color = \"white\", fontcolor = \"black\"]\n \n \n # software\n r_rstudio [label = \"R & RStudio\",  fillcolor =  \"DodgerBlue\", color = \"white\", fontcolor = \"white\"]\n deneggs [label = \"deneggs Package\",  fillcolor =  \"DodgerBlue\", color = \"white\", fontcolor = \"white\"] \n \n \n \n \n ##### define the relation\n \n \n ento -> {ovitraps  enc_ver adults} \n \n {ovitraps adults} -> geo_data -> {data_historic data_datos_actuales}\n data_historic -> years\n \n data_datos_actuales -> {data_acumulados data_trans_activa}\n \n {years data_acumulados data_trans_activa} ->spde -> hotspots\n \n {hotspots} -> r_rstudio -> deneggs\n \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 <div class="quarto-auto-generated-content">
 <p><img src="https://github.com/fdzul/spatial_analysis_dengue_R_2024_talks/blob/main/talks/pkg_installation/logo_cenaprece.jpeg?raw=true" class="slide-logo"></p>
 <div class="footer footer-default">
@@ -671,6 +604,44 @@ Fecha: 2024-08-15
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

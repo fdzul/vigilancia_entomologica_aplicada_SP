@@ -172,4 +172,4 @@ Es un paquete diseñado para generar mapas predictivos del número de huevos en 
 
 -   ***celular*** : [9999580167]()
 
--   ***slides***: [https://calm-hummingbird-41cb33.netlify.app/talks/dengueverse/#/](https://calm-hummingbird-41cb33.netlify.app/talks/dengueverse/#/)
+-   ***slides***: [https://stalwart-kangaroo-fd5f85.netlify.app/talks/dengueverse](https://stalwart-kangaroo-fd5f85.netlify.app/talks/dengueverse)
