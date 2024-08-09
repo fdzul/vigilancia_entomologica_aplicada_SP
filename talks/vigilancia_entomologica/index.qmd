@@ -21,8 +21,6 @@ format:
 
 <hr>
 
-<br>
-
 <h4>
 
 [Dr. Felipe Dzul Manzanilla]{style="color:#620002;"} 
@@ -49,15 +47,15 @@ Dr. Herón Huerta
 
 <h4>
 
-Dr. Grea Moreno-Banda
+Dra. Grea Moreno-Banda
 
 </h3>
 
+</h4>
+
+Dra. Victoria Pando
+
 </h3>
-
-Dr. Victoria Pando
-
-<br>
 
 <h5>
 
