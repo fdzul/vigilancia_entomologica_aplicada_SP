@@ -33,7 +33,9 @@ format:
 
 <h4>Dr. Herón Huerta</h3>
 
-<h4>Dr. Grea Moreno-Banda</h3>
+<h4>Dra. Grea Moreno-Banda</h3>
+
+<h4>Dra. Victoria Pando</h3>
 
 
 <br>
