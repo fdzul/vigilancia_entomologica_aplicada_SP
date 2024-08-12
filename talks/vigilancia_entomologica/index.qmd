@@ -73,12 +73,17 @@ Fecha: 2024-08-15
 
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
--   dengueverse
--   rgeomex
--   densnv
--   denhotspots
--   deneggs
--   popmex
+-   Flujograma Análisis Espacial del Vector
+-   Vigilancia Entomológica con Ovitrampas
+-   Ovitrampas y decisiones basadas en datos. 
+-   Análisis geoestadístico 
+-   Algoritmo de análisis geoestadístico 
+-   [deneggs]() y funciones para el Análisis geoestadístico.
+-   Ejemplos de las funciones.
+-   Mapa de la predicción de huevos en 4 ciudades de México.
+-   Intensidad de los hotspots de huevos
+-   Identificación de escenarios epidemiológicos.
+_   Ejemplos de los escenarios epidemiológicos en los Estados.
 
 ## [Análisis Espacial del Vector de Dengue]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
@@ -372,7 +377,7 @@ deneggs::eggs_hotblocks(path_vect = path_vect,
 
 
 
-## [Conceptos del Análisis Geoestadísticos de Ae. aegypti con INLA]{style="color:#003300;" .r-fit-text}
+## [Conceptos del Análisis Geoestadístico de *Ae. aegypti* con INLA]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -405,7 +410,7 @@ $\color{#2ECC40}{el \space proceso \space se \space encuentra \space implementad
 ::::
 
 
-## [Algoritmo del Análisis Geoestadístico de Ae. aegypti con INLA]{style="color:#003300;" .r-fit-text}
+## [Algoritmo del Análisis Geoestadístico de *Ae. aegypti* con INLA]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 :::: {.columns}
@@ -532,7 +537,7 @@ DiagrammeR::grViz("digraph {
 
 
 
-## [Análisis Geoestadístico de Ovitrampas en R]{.r-fit-text style="color:#003300;"}
+## [deneggs & el Análisis Geoestadístico de Ovitrampas en R]{.r-fit-text style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 :::: {.columns}
@@ -555,7 +560,7 @@ La función [spde_pred_map](https://fdzul.github.io/deneggs/reference/spde_pred_
 ::::
 
 
-## [Análisis Geoestadístico de Ovitrampas en R]{.r-fit-text style="color:#003300;"}
+## [Pasos para el Análisis Geoestadístico de Ovitrampas en R]{.r-fit-text style="color:#003300;"}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 -   1. Instalar el paquete [**INLA**](https://www.r-inla.org) (version de prueba = testing version). 
@@ -656,7 +661,7 @@ x <- deneggs::spde_pred_map(path_lect = path_ovitraps,
 names(x)
 ```
 
-### Distribuciones
+## Distribuciones
 ```{r}
 #| echo: true
 #| output: true
@@ -675,7 +680,7 @@ x$map
 :::
 
 
-## [Número de Huevos de *Ae. aegypti* en Mérida 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+## [Número de Huevos de *Ae. aegypti* en Mérida 2024 (Sem 23-31)]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -789,7 +794,7 @@ merida$spde[[31]]$map
 
 
 
-## [Número de Huevos de *Ae. aegypti* en Guadalajara 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+## [Número de Huevos de *Ae. aegypti* en Guadalajara 2024 (Sem 23-31)]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -904,7 +909,7 @@ guadalajara$spde[[31]]$map
 
 
 
-## [Número de Huevos de *Ae. aegypti* en Oaxaca 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+## [Número de Huevos de *Ae. aegypti* en Oaxaca 2024]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -1020,7 +1025,7 @@ oaxaca$spde[[30]]$map
 
 
 
-## [Número de Huevos de *Ae. aegypti* en Acapulco 2024 (Sem 23-31) ]{style="color:#003300;" .r-fit-text}
+## [Número de Huevos de *Ae. aegypti* en Acapulco 2024 (Sem 23-31)]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -1133,7 +1138,7 @@ acapulco$spde[[30]]$map
 </html>
 
 
-## [Intensidad de los Hotspots de la Abundancia de Huevos en el 2024 ]{style="color:#003300;" .r-fit-text}
+## [Intensidad de los Hotspots de la Abundancia de Huevos en el 2024]{style="color:#003300;" .r-fit-text}
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -1166,11 +1171,11 @@ acapulco$spde[[30]]$map
 ::: grid-container-intensidad
 
 ::: grid-item-intensidad
-Mérida
+
 :::
 
 ::: grid-item-intensidad
-Oaxaca
+
 :::
 
 ::: grid-item-intensidad
@@ -1202,11 +1207,11 @@ deneggs::map_eggs_hotspots(betas = oaxaca$betas,
 :::
 
 ::: grid-item-intensidad
-Guadalajara
+
 :::
 
 ::: grid-item-intensidad
-Acapulco
+
 :::
 
 
@@ -1253,7 +1258,8 @@ deneggs::map_eggs_hotspots(betas = guadalajara$betas,
 ::: {.column style="width: 50%"}
 Concepto
 
-![](https://github.com/fdzul/spatial_analysis_dengue_R_2024_talks/blob/main/talks/mia/transmision_persistente.jpg?raw=true){.absolute right="800" height="815"}
+<img src = "https://github.com/fdzul/spatial_analysis_dengue_R_2024_talks/blob/main/talks/mia/transmision_persistente.jpg?raw=true">
+
 :::
 
 :::{.column style="width: 50%"}
