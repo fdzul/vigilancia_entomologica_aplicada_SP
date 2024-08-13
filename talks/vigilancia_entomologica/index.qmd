@@ -55,13 +55,13 @@ Dra. Grea Moreno-Banda
 
 Dra. Victoria Pando
 
-</h3>
+</h4>
 
 <h5>
 
 Fecha: 2024-08-15
 
-</h4>
+</h5>
 
 <br>
 
@@ -77,7 +77,6 @@ Fecha: 2024-08-15
 -   Vigilancia Entomológica con Ovitrampas
 -   Ovitrampas y decisiones basadas en datos. 
 -   Análisis geoestadístico 
--   Algoritmo de análisis geoestadístico 
 -   [deneggs]() y funciones para el Análisis geoestadístico.
 -   Ejemplos de las funciones.
 -   Mapa de la predicción de huevos en 4 ciudades de México.
@@ -730,8 +729,6 @@ x$map
 
 
 ## [Número de Huevos de *Ae. aegypti* en Mérida 2024 (Sem 23-31)]{style="color:#003300;" .r-fit-text}
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-
 
 <html>
 <head>
@@ -844,8 +841,6 @@ merida$spde[[31]]$map
 
 
 ## [Número de Huevos de *Ae. aegypti* en Guadalajara 2024 (Sem 23-31)]{style="color:#003300;" .r-fit-text}
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-
 
 <html>
 <head>
@@ -958,9 +953,7 @@ guadalajara$spde[[31]]$map
 
 
 
-## [Número de Huevos de *Ae. aegypti* en Oaxaca 2024]{style="color:#003300;" .r-fit-text}
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-
+## [Número de Huevos de *Ae. aegypti* en Oaxaca 2024 (Sem 23-31)]{style="color:#003300;" .r-fit-text}
 
 <html>
 <head>
